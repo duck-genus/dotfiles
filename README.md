@@ -5,17 +5,22 @@ includes packages from AUR - **vscode, figlet, lolcat, neovim, lsd, firefox, dme
 # Install instructions
 
 Cloning the git repo
+
 `$ git clone https://github.com/duck-genus/dotfiles`
 
 Getting into dotfile directory
+
 `$ cd dotfiles`
 
 Make *sync_dotfiles.sh* executable
+
 `$ chmod +x ./sync_dotfiles.sh`
 
 Run *sync_dotfiles.sh*
+
 `$ ./sync_dotfiles.sh`
 
 Or you can use one-liner 
+
 `$ git clone https://github.com/duck-genus/dotfiles && cd dotfiles && chmod +x ./sync_dotfiles.sh && ./sync_dotfiles.sh`
 
