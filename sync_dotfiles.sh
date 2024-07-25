@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo hostnamectl
+sudo echo -e "Wait a sec...\n"
 
 # Function to install packages using pacman
 install_packages() {
