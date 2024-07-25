@@ -22,7 +22,7 @@ install_packages() {
 install_packages figlet lolcat
 
 # Display ASCII art with figlet and lolcat
-figlet "Lets GO!" | lolcat
+figlet "Let\'s GO!" | lolcat
 # Check if yay is already installed
 if ! command -v yay &> /dev/null; then
     # yay is not installed, proceed with installation
