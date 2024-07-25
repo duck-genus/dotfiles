@@ -1,8 +1,6 @@
 #!/bin/bash
 
 sudo touch me
-sudo remove me
-
 
 # Function to install packages using pacman
 install_packages() {
@@ -144,5 +142,7 @@ for source_file in "${!config_files[@]}"; do
     destination_file="${config_files[$source_file]}"
     move_config_file "$source_file" "$destination_file"
 done
+
+rm me
 
 echo -e "you are ready to go.\n"
