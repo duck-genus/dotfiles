@@ -23,6 +23,8 @@ install_packages figlet lolcat
 
 # Display ASCII art with figlet and lolcat
 figlet "Let\'s GO!" | lolcat
+sleep 5
+
 # Check if yay is already installed
 if ! command -v yay &> /dev/null; then
     # yay is not installed, proceed with installation
@@ -68,7 +70,7 @@ x_packages=(
     "xorg-xev"              # Xorg event monitoring
     "xorg-xkill"            # Xorg process killer
     "xorg-xwininfo"         # Xorg window information utility
-    "xauth"                 # X11 authentication
+    "xorg-xauth"            # X11 authentication
 )
 
 # Loop through Xorg packages and install them
