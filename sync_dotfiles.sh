@@ -18,7 +18,7 @@ install_packages() {
 install_packages figlet lolcat
 
 # Display ASCII art with figlet and lolcat
-figlet "Let\'s GO!" | lolcat
+figlet "Let's GO!" | lolcat
 sleep 5
 
 # Check if yay is already installed
