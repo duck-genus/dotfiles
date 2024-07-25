@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo touch me
+sudo hostnamectl
 
 # Function to install packages using pacman
 install_packages() {
@@ -19,7 +19,7 @@ install_packages figlet lolcat
 
 # Display ASCII art with figlet and lolcat
 figlet "Let's GO!" | lolcat
-sleep 5
+sleep 3
 
 # Check if yay is already installed
 if ! command -v yay &> /dev/null; then
@@ -143,6 +143,13 @@ for source_file in "${!config_files[@]}"; do
     move_config_file "$source_file" "$destination_file"
 done
 
-rm me
+# Get the current directory
+current_dir=$(dirname "$(readlink -f "$0")")
 
-echo -e "you are ready to go.\n"
+# Change directory to parent directory
+cd ..
+
+# Remove the directory
+rm -rf "$current_dir"
+
+reboot
