@@ -105,6 +105,9 @@ install_package "ttf-jetbrains-mono-nerd"
 # Install GNOME Terminal
 install_package "gnome-terminal"
 
+#Install FastFetch
+install_package "fastfetch"
+
 echo "Packages installation completed."
 
 # Define source and destination paths
