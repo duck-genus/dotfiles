@@ -67,10 +67,6 @@ x_packages=(
     "xorg-xkill"            # Xorg process killer
     "xorg-xwininfo"         # Xorg window information utility
     "xorg-xauth"            # X11 authentication
-    # Installing Themes but configure using lxappearance  
-    "lxappearance"
-    "materia-gtk-theme" 
-    "papirus-icon-theme"
 )
 
 # Loop through Xorg packages and install them
@@ -111,6 +107,11 @@ install_package "gnome-terminal"
 
 #Install FastFetch
 install_package "fastfetch"
+
+# Installing Themes but configure using lxappearance
+install_package "lxappearance"
+install_package "materia-gtk-theme"
+install_package "papirus-icon-theme"
 
 echo "Packages installation completed."
 
