@@ -1,6 +1,6 @@
 ## Just a automated setter for config files and install some basic packages.
 
-includes packages from AUR - **vscode, figlet, lolcat, neovim, lsd, firefox, dmenu, i3-wm, ly, lf, feh, gnome-terminal, JetBrains Font, fastfetch** and some **xorg packages**.
+includes packages from AUR - **vscode, figlet, lolcat, neovim, lsd, firefox, dmenu, i3-wm, ly, lf, feh, gnome-terminal, JetBrains Font, fastfetch, xorg packages** and some themes.
 
 # Install instructions
 
@@ -20,7 +20,8 @@ Run *sync_dotfiles.sh*
 
 `$ ./sync_dotfiles.sh`
 
-Or you can use one-liner 
+Or you can use one-liner, but actually you have to configure the lxappearance
 
-`$ git clone https://github.com/duck-genus/dotfiles && cd dotfiles && chmod +x ./sync_dotfiles.sh && ./sync_dotfiles.sh`
+`$ git clone https://github.com/duck-genus/dotfiles && cd dotfiles && chmod +x ./sync_dotfiles.sh && ./sync_dotfiles.sh && lxappearance`
 
+and it's recommended to reboot (hope your arch install doesn't break)

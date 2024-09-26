@@ -159,5 +159,3 @@ cd ..
 
 # Remove the directory
 rm -rf "$current_dir"
-
-reboot
