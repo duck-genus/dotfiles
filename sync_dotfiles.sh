@@ -105,13 +105,16 @@ install_package "ttf-jetbrains-mono-nerd"
 # Install GNOME Terminal
 install_package "gnome-terminal"
 
-#Install FastFetch
+# Install FastFetch
 install_package "fastfetch"
 
 # Installing Themes but configure using lxappearance
 install_package "lxappearance"
 install_package "materia-gtk-theme"
 install_package "papirus-icon-theme"
+
+# Installing brightnessctl
+install_package "brightnessctl"
 
 echo "Packages installation completed."
 

@@ -1,6 +1,6 @@
 ## Just a automated setter for config files and install some basic packages.
 
-includes packages from AUR - **vscode, figlet, lolcat, neovim, lsd, firefox, dmenu, i3-wm, ly, lf, feh, gnome-terminal, JetBrains Font, fastfetch, xorg packages** and some themes.
+includes packages from AUR - **vscode, figlet, lolcat, neovim, lsd, firefox, dmenu, i3-wm, ly, lf, feh, gnome-terminal, JetBrains Font, fastfetch, xorg packages, brightnessctl** and some themes.
 
 # Install instructions
 
