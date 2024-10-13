@@ -83,8 +83,8 @@ install_package "neovim"
 # Install Visual Studio Code
 install_package "visual-studio-code-bin"
 
-# Install Firefox
-install_package "firefox"
+# Install Brave
+install_package "brave-bin"
 
 # Install dmenu
 install_package "dmenu"
