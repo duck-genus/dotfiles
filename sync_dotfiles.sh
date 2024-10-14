@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo echo -e "Wait a sec...\n"
+sudo echo -e "Starting... \n"
 
 # Function to install packages using pacman
 install_packages() {
@@ -67,6 +67,7 @@ x_packages=(
     "xorg-xkill"            # Xorg process killer
     "xorg-xwininfo"         # Xorg window information utility
     "xorg-xauth"            # X11 authentication
+    "xclip"                 # for clipboard
 )
 
 # Loop through Xorg packages and install them
@@ -75,7 +76,7 @@ for x_package in "${x_packages[@]}"; do
 done
 
 #Install i3wm
-install_package i3-wm
+install_package "i3-wm"
 
 # Install lsd
 install_package "lsd"
@@ -123,12 +124,12 @@ echo "Packages installation completed."
 
 # Define source and destination paths
 declare -A config_files=(
-    ["vscode_settings.json"]="$HOME/.config/Code/User/settings.json"
-    ["vscode_keybindings.json"]="$HOME/.config/Code/User/keybindings.json"
-    ["i3_config"]="$HOME/.config/i3/config"
-    ["ly_config"]="/etc/ly/config.ini"
-    ["bashrc"]="$HOME/.bashrc"
-    ["bgimage.jpg"]="$HOME/.local/share/backgrounds/ripples.jpg"
+    ["./vscode_settings.json"]="$HOME/.config/Code/User/settings.json"
+    ["./vscode_keybindings.json"]="$HOME/.config/Code/User/keybindings.json"
+    ["./i3_config"]="$HOME/.config/i3/config"
+    ["./ly_config"]="/etc/ly/config.ini"
+    ["./bashrc"]="$HOME/.bashrc"
+    ["./bgimage.jpg"]="$HOME/.local/share/backgrounds/ripples.jpg"
 )
 
 # Function to move contents of a file
