@@ -74,6 +74,9 @@ for x_package in "${x_packages[@]}"; do
     install_package "$x_package"
 done
 
+#Install i3wm
+install_package i3-wm
+
 # Install lsd
 install_package "lsd"
 
@@ -125,7 +128,7 @@ declare -A config_files=(
     ["i3_config"]="$HOME/.config/i3/config"
     ["ly_config"]="/etc/ly/config.ini"
     ["bashrc"]="$HOME/.bashrc"
-    ["bgimage.jpg"]="$HOME/.bg.jpg"
+    ["bgimage.jpg"]="$HOME/.local/share/backgrounds/ripples.jpg"
 )
 
 # Function to move contents of a file
