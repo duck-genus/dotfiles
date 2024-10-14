@@ -185,7 +185,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-exec feh --bg-fill "~/.local/share/backgrounds/ripples.jpg"
+exec feh --bg-fill "$HOME/.local/share/backgrounds/ripples.jpg"
 
 default_border none
 
