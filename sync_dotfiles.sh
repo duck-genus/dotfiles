@@ -103,8 +103,9 @@ install_package "lf"
 # Install feh
 install_package "feh"
 
-# Install JetBrains Font
-install_package "ttf-jetbrains-mono-nerd"
+# Install Fonts
+install_package "ttf-jetbrains-mono-nerd"   # For coding
+install_package "ttf-clear-sans"            # For ui
 
 # Install GNOME Terminal
 install_package "gnome-terminal"
