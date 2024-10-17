@@ -1,0 +1,7 @@
+font_family JetBrainsMono Nerd Font
+font_size   14.0
+
+cursor_blink_interval  0.6
+mouse_hide_wait        2.0
+shell_integration      no-cursor
+

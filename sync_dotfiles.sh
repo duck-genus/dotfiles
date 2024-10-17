@@ -93,9 +93,9 @@ install_package "brave-bin"
 # Install dmenu
 install_package "dmenu"
 
-# Install ly
-install_package "ly"
-sudo systemctl enable ly -f
+# Install gdm
+install_package "gdm"
+sudo systemctl enable gdm -f
 
 # Install lf
 install_package "lf"
@@ -107,8 +107,8 @@ install_package "feh"
 install_package "ttf-jetbrains-mono-nerd"   # For coding
 install_package "ttf-clear-sans"            # For ui
 
-# Install GNOME Terminal
-install_package "gnome-terminal"
+# Install Kitty Terminal
+install_package "kitty"
 
 # Install FastFetch
 install_package "fastfetch"
@@ -128,9 +128,9 @@ declare -A config_files=(
     ["./vscode_settings.json"]="$HOME/.config/Code/User/settings.json"
     ["./vscode_keybindings.json"]="$HOME/.config/Code/User/keybindings.json"
     ["./i3_config"]="$HOME/.config/i3/config"
-    ["./ly_config"]="/etc/ly/config.ini"
     ["./bashrc"]="$HOME/.bashrc"
-    ["./bgimage.jpg"]="$HOME/.local/share/backgrounds/ripples.jpg"
+    ["./bgimage.jpg"]="/usr/share/backgrounds/ripples.jpg"
+    ["./kitty_config"]="$HOME/.config/kitty/kitty.conf"
 )
 
 # Function to move contents of a file
