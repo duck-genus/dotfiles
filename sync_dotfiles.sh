@@ -81,8 +81,9 @@ install_package "i3-wm"
 # Install lsd
 install_package "lsd"
 
-# Install neovim
+# Install neovim & vim
 install_package "neovim"
+install_package "vim"
 
 # Install Visual Studio Code
 install_package "visual-studio-code-bin"
@@ -129,7 +130,7 @@ declare -A config_files=(
     ["./vscode_keybindings.json"]="$HOME/.config/Code/User/keybindings.json"
     ["./i3_config"]="$HOME/.config/i3/config"
     ["./bashrc"]="$HOME/.bashrc"
-    ["./bgimage.jpg"]="/usr/share/backgrounds/ripples.jpg"
+    ["./bgimage.png"]="/usr/share/backgrounds/ripples.png"
     ["./kitty_config"]="$HOME/.config/kitty/kitty.conf"
 )
 
