@@ -1,31 +1,12 @@
 [
   {
-    "key": "ctrl+r",
-    "command": "-workbench.action.reloadWindow",
-    "when": "isDevelopment"
-  },
-  {
-    "key": "ctrl+r",
-    "command": "-workbench.action.openRecent"
-  },
-  {
-    "key": "ctrl+r",
-    "command": "-python.refreshTensorBoard",
-    "when": "python.hasActiveTensorBoardSession"
-  },
-  {
-    "key": "ctrl+r",
-    "command": "-workbench.action.terminal.runRecentCommand",
-    "when": "accessibilityModeEnabled && terminalFocus && terminalHasBeenCreated || accessibilityModeEnabled && terminalFocus && terminalProcessSupported || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
-  },
-  {
-    "key": "ctrl+r",
-    "command": "-workbench.action.quickOpenNavigateNextInRecentFilesPicker",
-    "when": "inQuickOpen && inRecentFilesPicker"
-  },
-  {
-    "key": "ctrl+r",
+    "key": "ctrl+shift+r",
     "command": "code-runner.run"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "-editor.action.refactor",
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
   },
   {
     "key": "ctrl+shift+w",
@@ -34,27 +15,5 @@
   {
     "key": "ctrl+shift+w",
     "command": "workbench.action.terminal.killAll"
-  },
-  {
-    "key": "ctrl+w",
-    "command": "-workbench.action.terminal.killEditor",
-    "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated || terminalEditorFocus && terminalFocus && terminalProcessSupported"
-  },
-  {
-    "key": "ctrl+w",
-    "command": "-workbench.action.closeActiveEditor"
-  },
-  {
-    "key": "ctrl+w",
-    "command": "-workbench.action.closeGroup",
-    "when": "activeEditorGroupEmpty && multipleEditorGroups"
-  },
-  {
-    "key": "ctrl+q",
-    "command": "-workbench.action.quit"
-  },
-  {
-    "key": "ctrl+q",
-    "command": "workbench.action.closeActiveEditor"
   }
 ]
